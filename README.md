@@ -20,11 +20,11 @@ php -S 0.0.0.0:8000
 ```ruby
 ruby -run -e httpd . -p 8000
 ```
-## nmap
+## [nmap](https://tools.kali.org/information-gathering/nmap)
 ```shell-script
 nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```
-## gobuster
+## [gobuster](https://tools.kali.org/web-applications/gobuster)
 ```bash
 gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```
