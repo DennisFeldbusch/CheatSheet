@@ -28,7 +28,7 @@ nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```bash
 gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```
-##  CeWL
+##  [CeWL](https://tools.kali.org/password-attacks/cewl)
 ```bash
 cewl -d 2 -m 5 -w genwords.txt https://10.10.10.10
 ```
