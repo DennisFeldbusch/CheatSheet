@@ -29,10 +29,13 @@ nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```
 ##  [CeWL](https://tools.kali.org/password-attacks/cewl)
+creates wordlist from website
 ```bash
 cewl -d 2 -m 5 -w genwords.txt https://10.10.10.10
 ```
 ## [enum4linux](https://tools.kali.org/information-gathering/enum4linux)
+enumerates Windows and Samba systems 
+Ports to look for: 445, 139
 ```bash
 enum4linux -U -o 10.10.10.10
 ```
