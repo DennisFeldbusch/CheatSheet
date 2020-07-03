@@ -32,6 +32,10 @@ gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```bash
 cewl -d 2 -m 5 -w genwords.txt https://10.10.10.10
 ```
+## [enum4linux](https://tools.kali.org/information-gathering/enum4linux)
+```bash
+enum4linux -U -o 10.10.10.10
+```
 ## Shells
 
 ### Set Listener 
