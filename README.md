@@ -35,6 +35,7 @@ cewl -d 2 -m 5 -w genwords.txt https://10.10.10.10
 ```
 ## [enum4linux](https://tools.kali.org/information-gathering/enum4linux)
 enumerates Windows and Samba systems 
+
 Ports to look for: 445, 139
 ```bash
 enum4linux -U -o 10.10.10.10
