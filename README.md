@@ -28,6 +28,10 @@ nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```bash
 gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```
+##  CeWL
+```bash
+cewl -d 2 -m 5 -w genwords.txt https://example.com
+```
 ## Shells
 
 ### Set Listener 
