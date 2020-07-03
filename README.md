@@ -26,7 +26,7 @@ nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```
 ## gobuster
 ```bash
-gobuster -u http:10.10.10.10/ -w /path/to/wordlist
+gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```
 ## Shells
 
