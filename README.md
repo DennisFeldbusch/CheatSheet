@@ -25,6 +25,7 @@ ruby -run -e httpd . -p 8000
 nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```
 ## [gobuster](https://tools.kali.org/web-applications/gobuster)
+bruteforce websites to find directories
 ```bash
 gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
 ```
