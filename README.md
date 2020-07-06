@@ -50,6 +50,15 @@ goofile -d kali.org -f pdf
 ```bash
 searchsploit tomcat
 ```
+## John The Ripper – JTR
+
+John the Ripper is different from tools like Hydra. Hydra does blind brute-forcing by trying username/password combinations on a service daemon like ftp server or telnet server. John however needs the hash first. So the greater challenge for a hacker is to first get the hash that is to be cracked. Now a days hashes are more easily crackable using free rainbow tables available online. Just go to one of the sites, submit the hash and if the hash is made of a common word, then the site would show the word almost instantly. Rainbow tables basically store common words and their hashes in a large database. Larger the database, more the words covered.
+|Command                                                                 |Description                               |
+|------------------------------------------------------------------------|------------------------------------------|
+|john –wordlist=/usr/share/wordlists/rockyou.txt hash                    |JTR password cracking                     |
+|john –format=descrypt –wordlist/usr/share/wordlists/rockyou.txt hash.txt|JTR forced descrypt cracking with wordlist|
+|john –format=descrypt hash –show                                        |JTR forced descrypt brute force cracking  |
+
 ## Shells
 
 ### Set Listener 
