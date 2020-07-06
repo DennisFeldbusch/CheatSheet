@@ -41,6 +41,12 @@ Ports to look for: 445, 139
 ```bash
 enum4linux -U -o 10.10.10.10
 ```
+## [goofile](https://tools.kali.org/information-gathering/goofile)
+finding specific filetypes in domain
+```bash
+goofile -d kali.org -f pdf
+```
+
 ## Shells
 
 ### Set Listener 
