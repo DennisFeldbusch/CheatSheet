@@ -46,7 +46,10 @@ finding specific filetypes in domain
 ```bash
 goofile -d kali.org -f pdf
 ```
-
+## [searchsploit](https://www.exploit-db.com/searchsploit)
+```bash
+searchsploit tomcat
+```
 ## Shells
 
 ### Set Listener 
