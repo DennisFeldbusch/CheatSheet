@@ -105,7 +105,12 @@ fg
 ```
 ## Usefuls Scripts
 ### HEX Converter
+#### Ascii to Hex
 ```bash
 #!/bin/bash
-echo $1 | tr -d “\n” | hexdump -e ‘16/1 “%02x “ “\n”
+echo $1 | tr -d “\n” | hexdump -e ‘16/1 “%02x “ “\n”‘
+```
+#### Hex to Ascii
+```bash
+
 ```
