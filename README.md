@@ -115,3 +115,11 @@ echo $1 | tr -d “\n” | hexdump -e ‘16/1 “%02x “ “\n”‘
 #!/bin/bash
 echo $1 | xxd -r -p
 ```
+## Hide yourself
+Interesting [Stack Exchange](https://security.stackexchange.com/questions/103792/is-using-vpn-tor-and-proxychains-together-more-secure) link
+### [VPN]()
+### [Proxy Chains](https://linuxhint.com/proxychains-tutorial/)
+A Proxy is an instance between both communication partners. If you send a request to a server the proxy intercepts it and is forwarding this request to the server but is behaving like itself send the request so the server don't know about me. And the exact way back.
+
+A Proxy Chain are multile Proxy Servers chained together so it is way more difficult to get to know the initial sender(client)
+### [Tor](https://de.wikipedia.org/wiki/Tor_(Netzwerk))
