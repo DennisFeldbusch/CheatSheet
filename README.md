@@ -125,3 +125,4 @@ A Proxy Chain are multile Proxy Servers chained together so it is way more diffi
 ### [Tor](https://de.wikipedia.org/wiki/Tor_(Netzwerk))
 Here is a nice [graphic](https://www.eff.org/pages/tor-and-https) on who sees what is provided in Tor and HTTPS cases.
 
+## [Shellcode Dis/Assembler](http://shell-storm.org/online/Online-Assembler-and-Disassembler/)
