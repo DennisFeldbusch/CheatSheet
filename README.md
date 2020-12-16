@@ -27,7 +27,7 @@ nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ## [gobuster](https://tools.kali.org/web-applications/gobuster)
 bruteforce websites to find directories and/or files
 ```bash
-gobuster dir -u http:10.10.10.10/ -w /path/to/wordlist
+gobuster dir -u http://10.10.10.10/ -w /path/to/wordlist
 ```
 ##  [CeWL](https://tools.kali.org/password-attacks/cewl)
 creates wordlist from website
