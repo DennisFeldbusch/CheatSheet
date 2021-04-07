@@ -1,5 +1,21 @@
 # CheatSheet
 
+## Planned ToDo's	
+
+* write scripts for automating the repetitive tasks like:
+  1. look for domain of the company
+  2. look for subdomains of the domain 
+  3. look for dns entries 
+  4. use [Google Hacking](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06) for deeper recon
+  5. generate a detailed report of all findings
+  6. ...
+
+* create a docker-based environment for pentesting/bug bounty hunting (find a way for running GUI based tools in docker) 	
+
+## Useful Guides and Links
+
+For Pentesting/BugBounty-Hunting there is a very detailed [map and guide](https://www.offensity.com/de/blog/just-another-recon-guide-pentesters-and-bug-bounty-hunters/) of how to proceed.
+
 ## Local Webserver
 
 ### Python
@@ -126,3 +142,5 @@ A Proxy Chain are multile Proxy Servers chained together so it is way more diffi
 Here is a nice [graphic](https://www.eff.org/pages/tor-and-https) on who sees what in Tor and HTTPS cases.
 
 ## [Shellcode Dis/Assembler](http://shell-storm.org/online/Online-Assembler-and-Disassembler/)
+
+
