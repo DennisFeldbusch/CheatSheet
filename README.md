@@ -18,6 +18,8 @@ For Pentesting/BugBounty-Hunting there is a very detailed [map and guide](https:
 
 Very useful BugBounty [CheatSheet](https://github.com/EdOverflow/bugbounty-cheatsheet) from EdOverflow
 
+Bug Bounty [Writeups](https://hackerone.com/hacktivity) for learning 
+
 ## Local Webserver
 
 ### Python

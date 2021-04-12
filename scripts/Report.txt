@@ -1,0 +1,29 @@
+# Report 
+
+
+
+## Target: $name 
+
+
+
+## Domains 
+
+
+
+### Subdomains 
+
+
+
+## Open Ports 
+
+
+
+## Interesting 
+
+
+ 
+## Found 
+
+
+
+
