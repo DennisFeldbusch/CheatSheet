@@ -40,37 +40,42 @@ php -S 0.0.0.0:8000
 ```ruby
 ruby -run -e httpd . -p 8000
 ```
-## [nmap](https://tools.kali.org/information-gathering/nmap)
+## Useful Tools
+
+### [nmap](https://tools.kali.org/information-gathering/nmap)
 ```shell-script
 nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```
-## [gobuster](https://tools.kali.org/web-applications/gobuster)
+* `-sC` = scans with the standard scripts
+* `-sV` = scans the versions
+
+### [gobuster](https://tools.kali.org/web-applications/gobuster)
 bruteforce websites to find directories and/or files
 ```bash
 gobuster dir -u http://10.10.10.10/ -w /path/to/wordlist
 ```
-##  [CeWL](https://tools.kali.org/password-attacks/cewl)
+###  [CeWL](https://tools.kali.org/password-attacks/cewl)
 creates wordlist from website
 ```bash
 cewl -d 2 -m 5 -w genwords.txt https://10.10.10.10
 ```
-## [enum4linux](https://tools.kali.org/information-gathering/enum4linux)
+### [enum4linux](https://tools.kali.org/information-gathering/enum4linux)
 enumerates Windows and Samba systems 
 
 Ports to look for: 445, 139
 ```bash
 enum4linux -U -o 10.10.10.10
 ```
-## [goofile](https://tools.kali.org/information-gathering/goofile)
+### [goofile](https://tools.kali.org/information-gathering/goofile)
 finding specific filetypes in domain
 ```bash
 goofile -d kali.org -f pdf
 ```
-## [searchsploit](https://www.exploit-db.com/searchsploit)
+### [searchsploit](https://www.exploit-db.com/searchsploit)
 ```bash
 searchsploit tomcat
 ```
-## [John The Ripper – JTR](https://tools.kali.org/password-attacks/john)
+### [John The Ripper – JTR](https://tools.kali.org/password-attacks/john)
 
 John the Ripper is different from tools like Hydra. Hydra does blind brute-forcing by trying username/password combinations on a service daemon like ftp server or telnet server. John however needs the hash first. So the greater challenge for a hacker is to first get the hash that is to be cracked. Now a days hashes are more easily crackable using free rainbow tables available online. Just go to one of the sites, submit the hash and if the hash is made of a common word, then the site would show the word almost instantly. Rainbow tables basically store common words and their hashes in a large database. Larger the database, more the words covered.
 |Command                                                                 |Description                               |
