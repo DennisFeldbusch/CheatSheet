@@ -38,7 +38,7 @@
 
 ## Planned ToDo's	
 
-* write scripts for automating the repetitive tasks like:
+- [ ] write scripts for automating the repetitive tasks like:
   1. look for domain of the company
   2. look for subdomains of the domain 
   3. look for dns entries 
@@ -46,7 +46,8 @@
   5. generate a detailed report of all findings
   6. ...
 
-* create a docker-based environment for pentesting/bug bounty hunting (find a way for running GUI based tools in docker) 	
+- [x] create a docker-based environment for pentesting/bug bounty hunting (find a way for running GUI based tools in docker) 	
+  - [Kali-Docker](https://github.com/DennisFeldbusch/Kali-Docker)
 
 ## Useful Guides and Links
 
