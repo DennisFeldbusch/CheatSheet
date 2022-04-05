@@ -34,6 +34,8 @@
       * [<a href="https://linuxhint.com/proxychains-tutorial/" rel="nofollow">Proxy Chains</a>](#proxy-chains)
       * [<a href="https://de.wikipedia.org/wiki/Tor_(Netzwerk)" rel="nofollow">Tor</a>](#tor)
    * [<a href="http://shell-storm.org/online/Online-Assembler-and-Disassembler/" rel="nofollow">Shellcode Dis/Assembler</a>](#shellcode-disassembler)
+   * [File Uploads](#file-uploads)
+      * [Magic Numbers](#magic-numbers)  
 
 # CheatSheet
 
@@ -207,5 +209,17 @@ A Proxy Chain are multile Proxy Servers chained together so it is way more diffi
 Here is a nice [graphic](https://www.eff.org/pages/tor-and-https) on who sees what in Tor and HTTPS cases.
 
 ## [Shellcode Dis/Assembler](http://shell-storm.org/online/Online-Assembler-and-Disassembler/)
+
+## File Uploads
+
+### Magic Numbers
+
+* these magic numbers at the start of a file define the type of file
+```
+BMP : 42 4D
+JPG : FF D8 FF E0
+PNG : 89 50 4E 47
+GIF : 47 49 46 38
+```
 
 
