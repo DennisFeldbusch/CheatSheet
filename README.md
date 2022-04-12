@@ -8,12 +8,14 @@
    * [Useful Tools](#useful-tools)
       * [<a href="https://tools.kali.org/information-gathering/nmap" rel="nofollow">nmap</a>](#nmap)
       * [<a href="https://tools.kali.org/web-applications/gobuster" rel="nofollow">gobuster</a>](#gobuster)
+      * [<a href="https://www.kali.org/tools/wpscan/" rel="nofollow">wpscan</a>](#wpscan)
       * [<a href="https://tools.kali.org/password-attacks/cewl" rel="nofollow">CeWL</a>](#cewl)
       * [<a href="https://tools.kali.org/information-gathering/enum4linux" rel="nofollow">enum4linux</a>](#enum4linux)
       * [<a href="https://tools.kali.org/information-gathering/goofile" rel="nofollow">goofile</a>](#goofile)
       * [<a href="https://www.exploit-db.com/searchsploit" rel="nofollow">searchsploit</a>](#searchsploit)
       * [<a href="https://tools.kali.org/password-attacks/john" rel="nofollow">John The Ripper – JTR</a>](#john-the-ripper--jtr)
       * [<a href="https://www.kali.org/tools/hydra/" rel="nofollow">hydra</a>](#hydra)
+      * [<a href="https://www.kali.org/tools/radare2/" rel="nofollow">radare2</a>](#radare2)
    * [Shells](#shells)
       * [Set Listener](#set-listener)
       * [<a href="http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet" rel="nofollow">Reverse Shell</a>](#reverse-shell)
@@ -157,6 +159,32 @@ pdf
 # show graph
 VV
 ```
+#### x86 registers
+```
+  ================ rax (64 bits)
+          ======== eax (32 bits)
+              ====  ax (16 bits)
+              ==    ah (8 bits)
+                ==  al (8 bits)
+```
+
+#### register purposes
+
+| Register | Purpose                                | Saved across calls |
+|----------|----------------------------------------|--------------------|
+| RAX      | temp register; return value            | no                 |
+| RBX      | callee-saved                           | yes                |
+| RCX      | used to pass 4th argument to functions | no                 |
+| RDX      | used to pass 3rd argument to functions | no                 |
+| RSP      | stack pointer                          | yes                |
+| RBP      | callee-saved; base pointer             | yes                |
+| RSI      | used to pass 2nd argument to functions | no                 |
+| RDI      | used to pass 1st argument to functions | no                 |
+| R8       | used to pass 5th argument to functions | no                 |
+| R9       | used to pass 6th argument to functions | no                 |
+| R10-11   | temporary                              | no                 |
+| R12-15   | callee-saved registers                 | yes                |
+
 ## Shells
 
 ### Set Listener 
