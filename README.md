@@ -103,7 +103,6 @@ wpscan --url 10.10.10.10
 ## advanced scan with plugin detection
 wpscan —url 10.10.10.10 —enumerate p,u —plugins-detection aggressive
 ``` 
-
 ###  [CeWL](https://tools.kali.org/password-attacks/cewl)
 creates wordlist from website
 ```bash
@@ -138,7 +137,26 @@ John the Ripper is different from tools like Hydra. Hydra does blind brute-forci
 ```zsh
 hydra -L wordlist -p test 10.10.147.44 -V http-form-post "/wp-login.php:log=^USER^&pwd=^PWD^:Invalid Username" -t 30
 ```
+### [radare2](https://www.kali.org/tools/radare2/)
+```zsh
+# start radare2
+radare2 file
 
+# analyze all
+aa 
+
+# list all functions 
+afl
+
+# set selection to main function
+s main 
+
+# disassemble
+pdf 
+
+# show graph
+VV
+```
 ## Shells
 
 ### Set Listener 
