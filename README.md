@@ -94,6 +94,16 @@ bruteforce websites to find directories and/or files
 ```bash
 gobuster dir -u http://10.10.10.10/ -w /path/to/wordlist
 ```
+### [wpscan](https://www.kali.org/tools/wpscan/)
+scans a target for wordpress related stuff
+```bash
+## basic scan
+wpscan --url 10.10.10.10
+
+## advanced scan with plugin detection
+wpscan —url 10.10.10.10 —enumerate p,u —plugins-detection aggressive
+``` 
+
 ###  [CeWL](https://tools.kali.org/password-attacks/cewl)
 creates wordlist from website
 ```bash
