@@ -85,6 +85,7 @@ ruby -run -e httpd . -p 8000
 ## Useful Tools
 
 ### [nmap](https://tools.kali.org/information-gathering/nmap)
+scans networks
 ```shell-script
 nmap -sC -sV -oA nmap/openadmin 10.10.10.171
 ```
@@ -140,6 +141,7 @@ John the Ripper is different from tools like Hydra. Hydra does blind brute-forci
 hydra -L wordlist -p test 10.10.147.44 -V http-form-post "/wp-login.php:log=^USER^&pwd=^PWD^:Invalid Username" -t 30
 ```
 ### [radare2](https://www.kali.org/tools/radare2/)
+radare2 is a tool for reverse-engineering
 ```zsh
 # start radare2
 radare2 file
