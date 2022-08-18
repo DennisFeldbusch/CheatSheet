@@ -187,6 +187,29 @@ VV
 | R10-11   | temporary                              | no                 |
 | R12-15   | callee-saved registers                 | yes                |
 
+#### RISC (ARM) instruction set
+```
+MOV DESTINATION, SOURCE
+```
+
+#### Stack
+
+##### Stackpointer
+- points to the next item on the stack
+- grows downwards
+
+##### Base pointer
+- unchanged point in memory where the stack starts
+
+```
+0x0000
+| SP |
+|    |
+| BP |
+|    |
+0xFFFF
+```
+
 ## Shells
 
 ### Set Listener 
