@@ -161,7 +161,28 @@ pdf
 # show graph
 VV
 ```
-#### x86 registers
+
+## Reverse Engineering
+
+### Get strings from binary
+```bash
+strings binaryFile
+```
+### Get hexdump from binary
+```bash
+hexdump --canonical binaryFile
+```
+
+
+### Get assembly
+
+```bash
+objdump -D -M x86-64 binaryFile
+```
+
+### Use radare2 to reverse engineer binary
+
+### x86 registers
 ```
   ================ rax (64 bits)
           ======== eax (32 bits)
@@ -170,7 +191,7 @@ VV
                 ==  al (8 bits)
 ```
 
-#### register purposes
+### register purposes
 
 | Register | Purpose                                | Saved across calls |
 |----------|----------------------------------------|--------------------|
@@ -187,18 +208,18 @@ VV
 | R10-11   | temporary                              | no                 |
 | R12-15   | callee-saved registers                 | yes                |
 
-#### RISC (ARM) instruction set
+### RISC (ARM) instruction set
 ```
 MOV DESTINATION, SOURCE
 ```
 
-#### Stack
+### Stack
 
-##### Stackpointer
+#### Stackpointer
 - points to the next item on the stack
 - grows downwards
 
-##### Base pointer
+#### Base pointer
 - unchanged point in memory where the stack starts
 
 ```
