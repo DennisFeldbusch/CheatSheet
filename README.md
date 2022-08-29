@@ -324,4 +324,7 @@ PNG : 89 50 4E 47
 GIF : 47 49 46 38
 ```
 
+## Priviledge Escalation
+
+- find files that belong to root but can be read by (anyone) because of groups
 
