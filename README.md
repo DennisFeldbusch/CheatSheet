@@ -15,6 +15,7 @@
       * [<a href="https://www.exploit-db.com/searchsploit" rel="nofollow">searchsploit</a>](#searchsploit)
       * [<a href="https://tools.kali.org/password-attacks/john" rel="nofollow">John The Ripper – JTR</a>](#john-the-ripper--jtr)
       * [<a href="https://www.kali.org/tools/hydra/" rel="nofollow">hydra</a>](#hydra)
+      * [Exiftool](#exiftool)
       * [<a href="https://www.kali.org/tools/radare2/" rel="nofollow">radare2</a>](#radare2)
    * [Shells](#shells)
       * [Set Listener](#set-listener)
@@ -140,6 +141,19 @@ John the Ripper is different from tools like Hydra. Hydra does blind brute-forci
 ```zsh
 hydra -L wordlist -p test 10.10.147.44 -V http-form-post "/wp-login.php:log=^USER^&pwd=^PWD^:Invalid Username" -t 30
 ```
+
+### [exiftool](https://exiftool.org/)
+Tool to read and modify the metadata of files.
+#### read metadata
+```zsh
+exiftool <file>
+```
+
+#### write metadata
+```zsh
+exiftool -artist=me <file>
+```
+
 ### [radare2](https://www.kali.org/tools/radare2/)
 radare2 is a tool for reverse-engineering
 ```zsh
@@ -314,6 +328,8 @@ Here is a nice [graphic](https://www.eff.org/pages/tor-and-https) on who sees wh
 
 ## File Uploads
 
+Use 
+
 ### Magic Numbers
 
 * these magic numbers at the start of a file define the type of file
@@ -325,6 +341,11 @@ GIF : 47 49 46 38
 ```
 
 ## Priviledge Escalation
+
+- find programms which can be executed as sudo without password
+```bash
+sudo -l
+```
 
 - find files that belong to root but can be read by (anyone) because of groups
 
