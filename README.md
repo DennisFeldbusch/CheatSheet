@@ -176,6 +176,14 @@ pdf
 VV
 ```
 
+### [wfuzz](https://www.kali.org/tools/wfuzz/)
+wfuzz is a web fuzzing tool 
+
+#### example of finding vhosts
+```zsh
+wfuzz -H "Host: FUZZ.<domain>" -c -z file,"<path/to/wordlist>" <domain>
+```
+
 ## Reverse Engineering
 
 ### Get strings from binary
