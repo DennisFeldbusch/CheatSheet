@@ -245,12 +245,16 @@ MOV DESTINATION, SOURCE
 - unchanged point in memory where the stack starts
 
 ```
-0x0000
-| SP |
-|    |
-| BP |
-|    |
-0xFFFF
+memory:                  CPU:
+
+0x0000                  ________ 
+|    | <--------------  |  SP  |
+|    |        |-------  |  BP  |
+|    |        |         |  IR  |
+|    | <------|         |  ..  |
+|    |                  |  ..  |
+|    |                  |  ..  |
+0xFFFF                  |______|
 ```
 
 ## Shells
